@@ -67,4 +67,4 @@ https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=<client_
 
 You should not be getting 403 Permission Denied if you follow the step.
 Otherwise, back to Step 3 again.
-![Permission-Denied-Error.png](https://postimg.cc/XXpcwdnz)
+[Permission-Denied-Error.png](https://postimg.cc/XXpcwdnz)
