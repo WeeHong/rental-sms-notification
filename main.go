@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 
-	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/joho/godotenv"
 	"github.com/twilio/twilio-go"
 	openapi "github.com/twilio/twilio-go/rest/api/v2010"
@@ -49,5 +48,6 @@ func handleRequest() {
 }
 
 func main() {
-	lambda.Start(handleRequest)
+	// lambda.Start(handleRequest)
+	handleRequest()
 }
