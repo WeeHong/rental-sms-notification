@@ -16,55 +16,21 @@ The Google Sheet API requires `credentials.json` and `token.json` to works.
 
 **The steps to generate the credentials might vary based on the present UI**
 
-### Step 1: Activate Sheet API
+Based on [Using OAuth 2.0 for Web Server Applications](https://developers.google.com/identity/protocols/oauth2/web-server)
 
-1. Login to the [Google Cloud Console](https://console.cloud.google.com/)
-1. Click on the **Navigation Menu** on the top left of the screen
-1. Choose **APIs & Services** > **Library**
-1. Enter _Google Sheets API_ on the search bar
-1. Click **Enabled** button
+_Certain portion of the instrument wrote on this page are outdated. Hence, I create the step below._
 
-### Step 2: Create credentials
+### Step 1: Create an
 
-1. Login to the [Google Cloud Console](https://console.cloud.google.com/)
-1. Click on the **Navigation Menu** on the top left corner of the screen
-1. Choose **APIs & Services** > **Credentials**
-1. Click on **Create Credentials** > **OAuth client ID**
-1. Select _Desktop app_ option under the **Application Type** (Server-side)
-1. Rename the **Name** if necessary
-1. Click **Create** button
-1. Download the JSON file after the pop out
+1. Go to the [Credentials Page](https://console.developers.google.com/apis/credentials)
+1. Click **Crete credentials** > **Service account**
+1. Fill in the form and click **Create and Continue** button
 
-### Step 3: Add test users
+### Step 2: Generate a JSON API key
 
-1. Login to the [Google Cloud Console](https://console.cloud.google.com/)
-1. Click on the **Navigation Menu** on the top left corner of the screen
-1. Choose **APIs & Services** > **OAuth consent screen**
-1. Click on **Add users** button under the **Test users** section
-1. Add the email address you would like to asssociate with, click **Save**
-
-### Step 4: Generate token
-
-This step is ambiguous.
-
-1. Once you run your API to trigger the Google Sheet API, you will notice there is a chunk of text similar below.
-
-```
-Go to the following link in your browser then type the authorization code:
-https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=<client_id>&redirect_uri=<redirect_uri>&response_type=code&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fspreadsheets.readonly&state=state-token
-```
-
-1. Paste the link in your browser or
-   - `Ctrl + Left click` for Windows user
-   - `Cmd + Left click` for macOS user
-1. You will see a screen like this.
-   [Step-1.png](/img/Step-1.png)
-1. Click **Continue**
-1. Check the **Checkbox** and Click **Continue**
-   [Step-2.png](/img/Step-2.png)
-1. Copy the code and save it as `token.json` file and place it on the root directory
-   [Step-3.png](/img/Step-3.png)
-
-You should not be getting 403 Permission Denied if you follow the step.
-Otherwise, back to Step 3 again.
-[Permission-Denied-Error.png](https://postimg.cc/XXpcwdnz)
+1. Go to the [Credentials Page](https://console.developers.google.com/apis/credentials)
+1. Click the service account you created earlier
+1. Click the **Keys** tab
+1. Click the **Add Key** button and select **Create new key**
+1. Select **JSON** for the Key type and click **Create** button
+1. Download the json file and place it on your project
