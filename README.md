@@ -8,12 +8,6 @@ This service develop in `Golang` and utilise the `Google Sheet API` to read the 
 <br />
 This service has been deployed to `AWS Lambda` and utilise `AWS CloudWatch` to trigger the function every last day of the month.
 
-## Notes
-
-The Google Sheet API requires `credentials.json` and `token.json` to works.
-<br />
-<br />
-
 **The steps to generate the credentials might vary based on the present UI**
 
 Based on [Using OAuth 2.0 for Web Server Applications](https://developers.google.com/identity/protocols/oauth2/web-server)
