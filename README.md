@@ -18,7 +18,7 @@ The Google Sheet API requires `credentials.json` and `token.json` to works.
 
 Based on [Using OAuth 2.0 for Web Server Applications](https://developers.google.com/identity/protocols/oauth2/web-server)
 
-_Certain portion of the instrument wrote on this page are outdated. Hence, I create the step below._
+_Certain portion of the instruction wrote on this page are outdated. Hence, I create the step below._
 
 ### Step 1: Create an
 
